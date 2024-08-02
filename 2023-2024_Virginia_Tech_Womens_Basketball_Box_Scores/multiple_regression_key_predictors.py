@@ -38,7 +38,7 @@ model = sm.OLS(y, X).fit()
 summary_df = model.summary2().tables[1]
 
 # Export the summary table to a CSV file
-csv_file_name = 'regression_results_excluding_high_vif_1.csv'
+csv_file_name = 'regression_results_excluding_high_vif.csv'
 summary_df.to_csv(csv_file_name)
 
 # Print confirmation message
